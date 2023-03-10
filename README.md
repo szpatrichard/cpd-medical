@@ -1,2 +1,2 @@
 # cpd-medical
-Open-source Android application designed to support the continuing professional development of medical staff
+Open-source Android application designed to support the continuing professional development of medical scientists.
