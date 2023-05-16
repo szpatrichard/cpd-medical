@@ -3,6 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,16 +20,49 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material3.Dark"
+        android:theme="@style/Theme.CPD"
         tools:targetApi="31">
         <activity
-            android:name=".RegistrationActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
+            android:name=".view2"
+            android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Material3.Dark.NoActionBar">
+            android:name=".reflection"
+            android:exported="false" />
+        <activity
+            android:name=".view"
+            android:exported="false" />
+        <activity
+            android:name=".Relevent_links_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Development_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Attachment_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_activtiy"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,8 +71,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

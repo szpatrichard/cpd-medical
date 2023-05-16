@@ -1,4 +1,4 @@
-package ie.mycit.cpd_medical;
+package ie.mycit.cpd;
 
 import org.junit.Test;
 
